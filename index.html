@@ -12,39 +12,41 @@
 <body>
   <header class="header-cv" id="header-cv">
     <div class="container-navbar" id="container-navbar">
-      <p class="logo" id="logo">Portafolio</p>
+      <p class="logo">Portafolio</p>
       <ul class="navbar" id="navbar">
-        <li><a href="">Home</a></li>
+        <li><a href="#Home">Home</a></li>
         <li><a href="">About me</a></li>
-        <li><a href="">Services</a></li>
+        <li><a href="#Services">Services</a></li>
         <li><a href="">Briefcase</a></li>
         <li><a href="">Contac us</a></li>
       </ul>
     </div>
   </header>
 
-  <section class="contenedor">
+  <section id="Home" class="contenedor">
     <div class="contenedor__name">
-      <h3>Hello it´s me </h2>
+      <h3>Hello it´s me</h2>
         <h1>Santiago Hurtado Marulanda</h1>
+        <br>
         <h3>And i´m Full stack Developer</h2>
+          <br>
           <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas repudiandae ipsam quas commodi
             molestias.
           </p>
 
           <div>
-            <a class="redes" href="" target="_blank">
+            <a class="redes" href="https://www.facebook.com/?locale=es_LA" target="_blank">
               <i class="fa-brands fa-facebook"></i>
             </a>
-            <a class="redes" href="" target="_blank">
+            <a class="redes" href="https://www.instagram.com/" target="_blank">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a class="redes" href="" target="_blank">
+            <a class="redes" href="https://github.com/" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
           </div>
           <div>
-            <a class="btn"> Download CV</a>
+            <button class="btn"> Download CV</button>
           </div>
     </div>
     <div>
@@ -52,7 +54,7 @@
     </div>
   </section>
 
-  <main class="main-home">
+  <main id="#Services" class="main-home">
     <section class="services">
       <h2 class="our-services">Our services</h2>
       <div class="cards">
@@ -67,7 +69,7 @@
             obcaecati ut nesciunt, at cupiditate maxime vero voluptatum rerum ea consequatur quas laudantium nostrum vel
             labore delectus inventore eligendi commodi?
           </p>
-          <a href="">Read More</a>
+          <button>Read More</button>
         </div>
 
         <div class="container-card">
@@ -83,7 +85,7 @@
             Sequi odio debitis doloremque vero optio alias consequatur sapiente
             iste mollitia.
           </p>
-          <a href="">Read More</a>
+          <button>Read More</button>
         </div>
 
         <div class="container-card">
@@ -99,11 +101,28 @@
             Sequi odio debitis doloremque vero optio alias consequatur sapiente
             iste mollitia.
           </p>
-          <a href="">Read More</a>
+          <button>Read More</button>
         </div>
       </div>
     </section>
   </main>
+
+  <section class="contact" id="contact">
+    <h2>Contact <span>Me!</span></h2>
+    <form>
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number">
+        <input type="text" placeholder="Email Subject">
+      </div>
+      <textarea id="" cols="48" rows="10" placeholder="Your Message"></textarea>
+    </form>
+    <input type="submit" value="Send Messaage" class="btn">
+        
+  </section>
 
 
 </body>

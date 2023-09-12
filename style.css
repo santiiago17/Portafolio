@@ -8,11 +8,13 @@
 body {
   width: 100%;
   height: auto;
+  box-sizing: border-box;
 }
 
 body>.header-cv {
   color: white;
 }
+
 
 .header-cv>.container-navbar {
   width: 100%;
@@ -21,18 +23,18 @@ body>.header-cv {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 4px solid black;
+  box-shadow: 0px 15px 20px black;
   position: fixed;
   z-index: 1;
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-left: 8.2rem;
   padding: 20px;
   cursor: default;
-  font-weight: 600;
-  text-shadow: 6px 6px 5px black;
+  font-weight: 700;
+
 }
 
 .navbar {
@@ -49,8 +51,8 @@ body>.header-cv {
   text-decoration: none;
   font-size: 22px;
   color: white;
-  padding: 20px 20px 20px 20px ;
-  transition: 0.1s;
+  padding: 15px 20px 15px 20px;
+  transition: 0.2s;
   font-weight: 600;
 }
 
@@ -58,42 +60,42 @@ body>.header-cv {
   background-color: white;
   color: #ff4800;
   border-radius: 50px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 1px 1px 1px black;
 }
 
 .contenedor {
-  height: 60rem;
-  width: 100%;
+  height: 55rem;
+
   text-align: left;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   background-color: #1f242d;
   color: white;
-  
+
 }
 
 .contenedor__name {
   margin: 0%;
 }
 
-.redes{
+.redes {
   margin-right: 4rem;
   text-decoration: none;
 }
 
-.fa-brands{
+.fa-brands {
   text-shadow: 5px 5px 5px #ff4800;
   font-size: 50px;
   margin-top: 3rem;
   color: white;
   transition: 0.2s;
-  
+
 }
 
-.fa-brands:hover{
-  transform: scale(1.1);
-  text-shadow: 7px 7px 5px red;
+.fa-brands:hover {
+  transform: scale(1.2);
+  text-shadow: 10px 10px 5px red;
 }
 
 .img-initial {
@@ -122,11 +124,15 @@ body>.header-cv {
   font-size: 22px;
   padding: 1rem;
   margin-top: 5rem;
-  box-shadow: 0px 0px 1rem #ff4800;
+  box-shadow: 1px 1px 1rem #ff4800;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.btn:hover{
-  box-shadow: 0px 0px 0rem ;
+
+
+.btn:hover {
+  box-shadow: 0px 0px 0rem;
 }
 
 .main-home {
@@ -146,7 +152,7 @@ body>.header-cv {
 .our-services {
   text-align: center;
   font-size: 3rem;
-  margin: 3rem 0rem 8rem 0rem;
+  margin-bottom: 4rem;
   text-shadow: -6px 6px 5px black;
 }
 
@@ -163,7 +169,7 @@ body>.header-cv {
   background-color: #1f242d
 }
 
-.container-card> i {
+.container-card>i {
   font-size: 4rem;
   margin: auto;
   margin-top: 25px;
@@ -179,8 +185,8 @@ body>.header-cv {
 
 }
 
-.container-card>a {
-  width: 45%;
+.container-card > button {
+  width: 10rem;
   font-size: 25px;
   padding: 5px;
   text-decoration: none;
@@ -189,11 +195,79 @@ body>.header-cv {
   border-radius: 1rem;
   margin: auto;
 }
-.container-card>a:hover{
-  box-shadow: -2px 2px 2px white;
+
+.container-card> button:hover {
+  box-shadow: -2px 2px 2px black;
+  transition: 0.2s;
 }
 
 .container-card:hover {
   transform: scale(1.05);
-  box-shadow: -20px 20px 10px #ff4800;
+  box-shadow: -20px 20px 30px #ff4800;
 }
+
+/* FORMULARIO */
+section{
+  padding: 5rem 9% 8rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-color: #1f242d;
+  color: white;
+ 
+}
+.contact form {
+
+  
+
+}
+
+/* .heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  text-shadow: -6px 6px 5px black;
+}
+
+.contact form {
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.contact input,
+.contact form textarea {
+  
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: white;
+  background: #1f242d;
+  border-radius: .8rem;
+  margin: 0.7rem;
+}
+
+.contact form .input-box input {
+  width: 50%;
+
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+section {
+  padding: 4rem 2% 8rem;
+} */
