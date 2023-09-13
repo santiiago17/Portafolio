@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
   font-family: 'Poppins', sans-serif;
 }
 
@@ -9,51 +8,56 @@ body {
   width: 100%;
   height: auto;
   box-sizing: border-box;
+  background-color: #323946;
+  color: white;
 }
 
-body>.header-cv {
-  color: white;
+
+html{
+  scroll-behavior: smooth;
 }
 
 
 .header-cv>.container-navbar {
   width: 100%;
-  height: 10%;
+  height: 5rem;
   background-color: #ff4800;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 15px 20px black;
+  box-shadow: 0px 1px 20px black;
   position: fixed;
   z-index: 1;
+  gap: 50rem  ;
 }
 
 .logo {
   font-size: 2.5rem;
-  margin-left: 8.2rem;
-  padding: 20px;
+  margin-left: 12.9rem;
   cursor: default;
   font-weight: 700;
 
 }
 
 .navbar {
-  display: flex;
-  margin-right: 5%;
+  display: flex; 
+  gap: 2.5rem ;
+
 }
 
 .navbar>li {
-  margin-left: 20px;
+  display: flex; 
   list-style: none;
 }
 
 .navbar>li>a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 1.3rem;
   color: white;
-  padding: 15px 20px 15px 20px;
+  padding: .4rem;
   transition: 0.2s;
-  font-weight: 600;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .navbar>li>a:hover {
@@ -64,20 +68,20 @@ body>.header-cv {
 }
 
 .contenedor {
+  flex-wrap: wrap;
+  padding-top: 19rem;
   height: 55rem;
-
   text-align: left;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #1f242d;
   color: white;
+  height: auto;
 
 }
 
-.contenedor__name {
-  margin: 0%;
-}
+
 
 .redes {
   margin-right: 4rem;
@@ -105,6 +109,16 @@ body>.header-cv {
   position: relative;
   box-shadow: 0px 0px 2rem black;
   object-fit: cover;
+  animation: moverArribaAbajo 3s ease-in-out infinite;
+
+}
+@keyframes moverArribaAbajo{
+  0%, 100%{
+    transform: translateY();
+  }
+  50%{
+    transform: translateY(-20px);
+  }
 }
 
 .contenedor h1 {
@@ -124,29 +138,27 @@ body>.header-cv {
   font-size: 22px;
   padding: 1rem;
   margin-top: 5rem;
-  box-shadow: 1px 1px 1rem #ff4800;
+  margin-bottom: 5rem;
+  box-shadow: 1px 1px 2rem 3px #ff4800;
   cursor: pointer;
   transition: 0.3s;
 }
-
-
 
 .btn:hover {
   box-shadow: 0px 0px 0rem;
 }
 
 .main-home {
-  width: 100%;
+  padding-top: 7rem;
   height: 53rem;
-  background-color: #323946;
-  color: white;
   display: flex;
   flex-direction: column;
 }
 
 .cards {
   display: flex;
-  justify-content: space-around;
+ justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .our-services {
@@ -157,7 +169,8 @@ body>.header-cv {
 }
 
 .container-card {
-  width: 20%;
+  margin: 2rem;
+  width: 23rem;
   height: 30rem;
   padding: 1rem;
   display: flex;
@@ -197,7 +210,7 @@ body>.header-cv {
 }
 
 .container-card> button:hover {
-  box-shadow: -2px 2px 2px black;
+  box-shadow: -2px 2px 2px white;
   transition: 0.2s;
 }
 
@@ -206,68 +219,92 @@ body>.header-cv {
   box-shadow: -20px 20px 30px #ff4800;
 }
 
+/* LATEST PROJECT */
+
+.section-latest{
+  background-color: #1f242d;
+  height: auto;
+  padding: 6rem 0 25rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-latest h2{
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  font-size: 3rem;
+  text-shadow: -6px 6px 5px black;
+}
+
+.section-latest div{
+  padding-top: 4rem;
+}
+
+.section-latest img {
+  width: 25rem;
+  height: 15rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
 /* FORMULARIO */
 section{
-  padding: 5rem 9% 8rem;
+  padding: 1rem 9% 8rem;
 }
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  background-color: #1f242d;
   color: white;
+  padding-bottom: 0;
+  padding-top: 1rem;
  
 }
-.contact form {
-
-  
-
-}
-
-/* .heading {
-  text-align: center;
-  font-size: 3rem;
+.contact h2{
+  padding-top: 4rem;
   margin-bottom: 4rem;
+  font-size: 3rem;
   text-shadow: -6px 6px 5px black;
 }
 
-.contact form {
-  margin: 1rem auto;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-  display: flex;
-  flex-direction: row;
-
-}
-
-.contact input,
-.contact form textarea {
-  
-  padding: 1.5rem;
-  font-size: 1.6rem;
+.contact input, textarea{
+  width: 25rem;
+  padding: 1rem;
+  margin: .4rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color:#1f242d;
   color: white;
-  background: #1f242d;
-  border-radius: .8rem;
-  margin: 0.7rem;
 }
 
-.contact form .input-box input {
-  width: 50%;
+.contact textarea{
+  width: 53rem;
+}
+
+/* FOOTER */
+footer{
+  display: flex;
+  justify-content: space-around;
+  gap: 70rem  ;
+  height: 10rem;
+  background-color: #1f242d;
+  align-items: center;
+  padding: 1rem;
+  
+}
+footer a{
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #ff4800;
+  padding: .6rem;
+  border-radius: .3rem;
+  transition: 0.3s;
+}
+footer a:hover{
+  box-shadow: 0 0 10px #fff;
 
 }
 
-.contact form textarea {
-  resize: none;
-}
 
-.contact form .btn {
-  margin-top: 2rem;
-  cursor: pointer;
-}
-
-section {
-  padding: 4rem 2% 8rem;
-} */
