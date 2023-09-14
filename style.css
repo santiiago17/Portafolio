@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Blender Pro", Sans-serif;
 }
 
 body {
@@ -81,8 +81,6 @@ html{
 
 }
 
-
-
 .redes {
   margin-right: 4rem;
   text-decoration: none;
@@ -134,12 +132,11 @@ html{
   background-color: #ff4800;
   color: white;
   border-radius: 4rem;
-  display: inline-block;
   font-size: 22px;
   padding: 1rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  box-shadow: 1px 1px 2rem 3px #ff4800;
+  box-shadow: 1px 1px 1rem  #ff4800;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -147,6 +144,8 @@ html{
 .btn:hover {
   box-shadow: 0px 0px 0rem;
 }
+
+  /* SERVICES */
 
 .main-home {
   padding-top: 7rem;
@@ -157,7 +156,7 @@ html{
 
 .cards {
   display: flex;
- justify-content: space-around;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -179,7 +178,12 @@ html{
   border-radius: 150px 0px;
   transition: 0.3s;
   color: white;
-  background-color: #1f242d
+  background-color: #1f242d;
+}
+
+.container-card:hover {
+  transform: scale(1.02);
+  outline: solid #ff4800;
 }
 
 .container-card>i {
@@ -198,26 +202,16 @@ html{
 
 }
 
-.container-card > button {
-  width: 10rem;
-  font-size: 25px;
-  padding: 5px;
-  text-decoration: none;
-  background-color: black;
-  color: inherit;
-  border-radius: 1rem;
+ .container-card > button {
   margin: auto;
-}
+  box-shadow: none;
+} 
 
 .container-card> button:hover {
   box-shadow: -2px 2px 2px white;
   transition: 0.2s;
 }
 
-.container-card:hover {
-  transform: scale(1.05);
-  box-shadow: -20px 20px 30px #ff4800;
-}
 
 /* LATEST PROJECT */
 
@@ -228,27 +222,30 @@ html{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 7rem;
+  padding-top: 4rem;
 }
 
 .section-latest h2{
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
   font-size: 3rem;
   text-shadow: -6px 6px 5px black;
 }
 
 .section-latest div{
-  padding-top: 4rem;
+  padding-top: 12rem;
+  padding-bottom: 5rem;
 }
 
 .section-latest img {
-  width: 25rem;
-  height: 15rem;
-  margin: 1rem;
-  border-radius: 1rem;
+  width: 29rem;
+  height: 19rem;
+  
 }
 
 /* FORMULARIO */
+
 section{
   padding: 1rem 9% 8rem;
 }
@@ -259,7 +256,6 @@ section{
   color: white;
   padding-bottom: 0;
   padding-top: 1rem;
- 
 }
 .contact h2{
   padding-top: 4rem;
@@ -277,6 +273,7 @@ section{
   border: none;
   background-color:#1f242d;
   color: white;
+  
 }
 
 .contact textarea{
@@ -284,6 +281,7 @@ section{
 }
 
 /* FOOTER */
+
 footer{
   display: flex;
   justify-content: space-around;
