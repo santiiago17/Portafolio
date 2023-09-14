@@ -48,6 +48,7 @@ html{
 .navbar>li {
   display: flex; 
   list-style: none;
+  cursor: pointer;
 }
 
 .navbar>li>a {
@@ -57,7 +58,6 @@ html{
   padding: .4rem;
   transition: 0.2s;
   font-weight: 400;
-  cursor: pointer;
 }
 
 .navbar>li>a:hover {
@@ -68,6 +68,7 @@ html{
 }
 
 .contenedor {
+  width: 100%;
   flex-wrap: wrap;
   padding-top: 19rem;
   height: 55rem;
@@ -148,6 +149,7 @@ html{
   /* SERVICES */
 
 .main-home {
+  width: 100%;
   padding-top: 7rem;
   height: 53rem;
   display: flex;
@@ -156,7 +158,8 @@ html{
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -216,14 +219,11 @@ html{
 /* LATEST PROJECT */
 
 .section-latest{
+  /* border: solid 2px red; */
+  width: 100%;
   background-color: #1f242d;
+  text-align: center;
   height: auto;
-  padding: 6rem 0 25rem ;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 7rem;
-  padding-top: 4rem;
 }
 
 .section-latest h2{
@@ -232,22 +232,53 @@ html{
   font-size: 3rem;
   text-shadow: -6px 6px 5px black;
 }
-
-.section-latest div{
-  padding-top: 12rem;
-  padding-bottom: 5rem;
+.section-latest img{
+  width: 20rem;
 }
 
-.section-latest img {
-  width: 29rem;
-  height: 19rem;
-  
+.motorcycle{
+  flex-wrap: wrap;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
 }
+
+.motorcycle-box{
+  position: relative;
+  margin: 2rem;
+  width: 25rem;
+  height: auto;
+  background-color: #323946;
+  border-radius: 2rem;
+  overflow: hidden;
+
+}
+
+.motorcycle-layer{
+  padding:1rem;
+  font-weight: 100;
+  position: absolute;
+  opacity: 1;
+  top: 12rem;
+  transition: 0.7s;
+  background-color;
+ 
+}
+.motorcycle-box:hover .motorcycle-layer{
+  /* transform: scale(1.1); */
+  top: 3rem;
+  opacity: 1;
+}
+.section-latest img{
+ 
+}
+
+
 
 /* FORMULARIO */
 
 section{
-  padding: 1rem 9% 8rem;
+  padding: 1rem 0 8rem;
 }
 .contact {
   display: flex;
